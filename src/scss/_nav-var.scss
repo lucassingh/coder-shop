@@ -1,0 +1,158 @@
+.navbar-items {
+    background: $white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:  1.27rem;
+    -webkit-box-shadow: $box-shadows;
+    -moz-box-shadow: $box-shadows;
+    box-shadow: $box-shadows;
+    border-top: 1px solid $border-color;
+}
+
+.navbar-logo {
+    color: $white;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.fa-react {
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+}
+
+.nav-menu-m {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: center;
+}
+
+.nav-links {
+    color: $primary-color;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.15rem;
+}
+
+.nav-links-shop {
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    border-radius: 7px;
+    text-decoration: none;
+    padding: 0.2rem 0.8rem;
+    font-size: 1.15rem;
+}
+
+.nav-links-shop:hover {
+    background-color:$secondary-color;
+    border: 1px solid $secondary-color;
+    color: $white;
+}
+
+.nav-links:hover {
+    background-color:$secondary-color;
+    color: $white;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+}
+
+.nav-links-mobile {
+    display: none;
+}
+
+.fa-bars {
+    color: $primary-color;    
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 960px) {
+    .navbar-items {
+        position: relative;        
+    }
+
+    .nav-menu-m {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 49px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu-m.active-m {
+        background:$white;
+        left: 0;
+        opacity: 1;
+        border-top: 1px solid $border-color;
+        z-index: 99;
+        border-bottom: 1px solid $border-color;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        border-bottom: 1px solid $border-color;
+        display: table;
+    }
+
+    .nav-links:hover {
+        background-color: $secondary-color;
+        border-radius: 0;
+    }
+
+    .nav-links-shop {
+        text-align: center;
+        width: 100%;
+        border:none;
+        display: table;
+    }
+
+    .navbar-logo {
+        position: absolute;
+        top: -5px;
+        left: 0;
+        transform: translate(25%, 50%);
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: -22px;
+        right: 0px;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        color: $primary-color;
+        cursor: pointer;
+    }
+
+    .fa-times {
+        color: $primary-color;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        right: 18px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .menu-icon {
+        right: 0px;
+    }
+}
+
