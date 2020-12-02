@@ -1,7 +1,7 @@
 .brand-bar {
     width: 100%;
     height: 60px;
-    background: #fff;
+    background: $white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,20 +22,20 @@
         .fa-shopping-cart {
             display: flex;
             align-items: center;
-            color: #0057ff;
+            color:$primary-color;
             font-size: 20px;
         }
 
         .fa-shopping-cart:hover {
-            color: #dc5cbd;
+            color:$secondary-color;
             cursor: pointer;
         }
 
         .button-login {
             width: 100px;
             outline: none;
-            background: #dc5cbd;
-            color: #fff;
+            background:$secondary-color;
+            color: $white;
             border-radius: 50px;
             padding: 0;
             border: none;
@@ -43,7 +43,7 @@
         }
 
         .button-login:hover {
-            background:#0057ff;
+            background:$primary-color;
             transition: all 0.2s ease-out;
             cursor: pointer;
         }

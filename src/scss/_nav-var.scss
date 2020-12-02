@@ -1,18 +1,18 @@
 .navbar-items {
-    background: #fff;
+    background: $white;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size:  1.27rem;
-    -webkit-box-shadow: 1px 3px 11px -8px rgba(82,82,82,1);
-    -moz-box-shadow: 1px 3px 11px -8px rgba(82,82,82,1);
-    box-shadow: 1px 3px 11px -8px rgba(82,82,82,1);
-    border-top: 1px solid #EEEEEE;
+    -webkit-box-shadow: $box-shadows;
+    -moz-box-shadow: $box-shadows;
+    box-shadow: $box-shadows;
+    border-top: 1px solid $border-color;
 }
 
 .navbar-logo {
-    color: #fff;
+    color: $white;
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
@@ -34,15 +34,15 @@
 }
 
 .nav-links {
-    color: #0057ff;
+    color: $primary-color;
     text-decoration: none;
     padding: 0.5rem 1rem;
     font-size: 1.15rem;
 }
 
 .nav-links-shop {
-    color: #0057ff;
-    border: 1px solid #0057ff;
+    color: $primary-color;
+    border: 1px solid $primary-color;
     border-radius: 7px;
     text-decoration: none;
     padding: 0.2rem 0.8rem;
@@ -50,14 +50,14 @@
 }
 
 .nav-links-shop:hover {
-    background-color:#dc5cbd;
-    border: 1px solid #dc5cbd;
-    color: #fff;
+    background-color:$secondary-color;
+    border: 1px solid $secondary-color;
+    color: $white;
 }
 
 .nav-links:hover {
-    background-color:#dc5cbd;
-    color: #fff;
+    background-color:$secondary-color;
+    color: $white;
     border-radius: 4px;
     transition: all 0.2s ease-out;
 }
@@ -67,7 +67,7 @@
 }
 
 .fa-bars {
-    color: #0057ff;    
+    color: $primary-color;    
 }
 
 .menu-icon {
@@ -91,12 +91,12 @@
     }
 
     .nav-menu-m.active-m {
-        background:#fff;
+        background:$white;
         left: 0;
         opacity: 1;
-        border-top: 1px solid #EEEEEE;
+        border-top: 1px solid $border-color;
         z-index: 99;
-        border-bottom: 1px solid #eeeeee;
+        border-bottom: 1px solid $border-color;
         transition: all 0.5s ease;
     }
 
@@ -104,12 +104,12 @@
         text-align: center;
         padding: 2rem;
         width: 100%;
-        border-bottom: 1px solid #eeeeee;
+        border-bottom: 1px solid $border-color;
         display: table;
     }
 
     .nav-links:hover {
-        background-color: #dc5cbd;
+        background-color: $secondary-color;
         border-radius: 0;
     }
 
@@ -134,12 +134,12 @@
         right: 0px;
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
-        color: #0057ff;
+        color: $primary-color;
         cursor: pointer;
     }
 
     .fa-times {
-        color: #0057ff;
+        color: $primary-color;
         font-size: 2rem;
     }
 }
