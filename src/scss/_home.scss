@@ -1,4 +1,13 @@
 .container-home {
     text-align: center;
     padding: 0% 10% 3% 10%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid $border-color;
+}
+
+@media screen and (max-width: 414px) {
+    .container-home {
+        padding: 0%;
+    }
 }
