@@ -1,5 +1,5 @@
 .slider {
-    width: 100%;
+    width: 80%;
     height: auto;
     position: relative;
     box-sizing: border-box;
@@ -51,4 +51,10 @@
 #goRight {
     right: 0;
     @extend %btn-styles;
+}
+
+@media screen and (max-width: 414px) {
+    .slider {
+        width: 100%;
+    }
 }
