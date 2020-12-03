@@ -40,18 +40,16 @@
     font-size: 1.15rem;
 }
 
-.nav-links-shop {
-    color: $primary-color;
+.shop {
     border: 1px solid $primary-color;
     border-radius: 7px;
-    text-decoration: none;
-    padding: 0.2rem 0.8rem;
-    font-size: 1.15rem;
+    padding: 0.3rem 0.8rem;
 }
 
-.nav-links-shop:hover {
+.shop:hover {
     background-color:$secondary-color;
     border: 1px solid $secondary-color;
+    border-radius: 7px;
     color: $white;
 }
 
@@ -84,6 +82,7 @@
         flex-direction: column;
         width: 100%;
         position: absolute;
+        grid-gap: 0;
         top: 49px;
         left: -100%;
         opacity: 1;
@@ -104,8 +103,8 @@
         text-align: center;
         padding: 2rem;
         width: 100%;
-        border-bottom: 1px solid $border-color;
         display: table;
+        border-top: 1px solid $border-color;
     }
 
     .nav-links:hover {
@@ -113,11 +112,9 @@
         border-radius: 0;
     }
 
-    .nav-links-shop {
-        text-align: center;
-        width: 100%;
-        border:none;
-        display: table;
+    .shop {
+        border-radius: 0;
+        margin-top: 2px;
     }
 
     .navbar-logo {
