@@ -23,6 +23,6 @@ export const NavbarData = [
     {
         title: 'Shop',
         url: '/shop',
-        cname: 'nav-links-shop'
+        cname: 'nav-links shop'
     }
 ]
