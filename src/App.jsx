@@ -1,16 +1,15 @@
 import './App.scss';
 import Navbar from './components/shared/navbar/Navbar';
+import Home from './components/home/Home';
 
 function App() {
   return (
 
     <>
         <Navbar/>
+        <Home/>
           
-    <div className="App">
-        <h1>Coder-shop</h1>
-        <p>Proyecto e-commerce para curso de react Coderhouse</p>
-    </div>
+    
     </>
   );
 }
