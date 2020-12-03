@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Image from './Image';
-import i1 from '../../../images/1.jpg';
-import i2 from '../../../images/2.jpg';
-import i3 from '../../../images/3.jpg';
+import i1 from '../../../assets/1.jpg';
+import i2 from '../../../assets/2.jpg';
+import i3 from '../../../assets/3.jpg';
 
 function Slider() {
     let sliderArray = [
@@ -13,9 +13,7 @@ function Slider() {
 
     const [x, setX] = useState(0)
     const goLeft = () => {
-        // setX(x + 100);
         x === 0 ? setX(-100 * (sliderArray.length - 1)) : setX(x + 100);
-        console.log(x);
     }
 
     const goRight = () => {

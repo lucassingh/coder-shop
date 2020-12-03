@@ -10,3 +10,50 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+//global styles
+
+.container-title-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+
+.title-section {
+        color: $primary-color;
+    }
+}
+
+//home section slider
+
+.container-section {
+    text-align: center;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid $border-color;
+}
+
+@media screen and (min-width: 1400px) {
+
+//home section slider
+
+.container-section {
+    text-align: center;
+    padding: 0% 10% 3% 10%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid $border-color;
+}
+
+.container-title-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2%;
+    padding: 0% 18% 0% 18%;    
+        .title-section {
+            color: $primary-color;
+        }
+    }    
+}
