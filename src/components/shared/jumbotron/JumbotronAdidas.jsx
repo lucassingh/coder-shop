@@ -1,7 +1,6 @@
 import React from 'react'
-// import JumbotronData from './JumbotronData';
 
-function Jumbotron() {
+function JumbotronAdidas() {
     return (
         <>
             <div className="adidas-container">
@@ -18,15 +17,8 @@ function Jumbotron() {
                     <button className="adidas-button-shop">Add to cart</button>
                 </div>
             </div>
-           
         </>
     )
 }
 
-export default Jumbotron
-
-
-
-
-
-
+export default JumbotronAdidas
