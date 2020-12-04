@@ -1,4 +1,4 @@
-.adidas-container {
+.nike-container {
     height: 90vh;
     width: 100%;
     display: flex;
@@ -6,48 +6,49 @@
     flex-direction: column;
 }
 
-.adidas-sneaker {
+.nike-sneaker {
     margin-top: 10rem;
     display: flex;
     align-items: flex-end;
     justify-content: center;
 }
 
-.adidas-sneaker img {
+.nike-sneaker img {
     width: 17rem;
     margin-left: -33px;
 }
 
-.adidas-circle {
+.nike-circle {
     width: 12rem;
     height: 12rem;
     background: linear-gradient(
-        to right, 
-        #dc5cbd, 
-        #0057ff
+        to right,
+        #0057ff,
+        #dc5cbd,
     );
     position: absolute;
-    border-radius: 50%;
+    border-radius: 5%;
 }
 
-.adidas-container-info {
+.nike-container-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 2rem 3rem 2rem 2rem;
 
-    .adidas-title {
+    .nike-title {
         color:#0057ff;
         font-size: 2rem;
     }
 
-    .adidas-text {
+    .nike-text {
         color: #000;
         font-size: 0.8rem;
         font-weight: 300;
     }
 
-    .adidas-button-shop {
+    .nike-button-shop {
         width: 160px;
         outline: none;
         background: #dc5cbd;
@@ -60,7 +61,7 @@
         font-size: 15px;
     }
 
-    .adidas-button-shop:hover {
+    .nike-button-shop:hover {
         background:#0057ff;
         transition: all 0.2s ease-out;
         cursor: pointer;
@@ -68,14 +69,14 @@
 }
 
 @media screen and (min-width: 768px) {
-    .adidas-container {
+    .nike-container {
         height: 55vh;        
         display: flex;
         justify-content: center;
         flex-direction: row;
     }
 
-    .adidas-sneaker {
+    .nike-sneaker {
         width: 50%;
         display: flex;
         align-items: flex-end;
@@ -84,28 +85,29 @@
         margin-top: 0;
     }
 
-    .adidas-sneaker img {
+    .nike-sneaker img {
         width: 17rem;
         margin-left: -33px;
     }
 
-    .adidas-circle {
+    .nike-circle {
         width: 12rem;
         height: 12rem;
+        border-radius: 10%;
     }
 
-    .adidas-container-info {
+    .nike-container-info {
         width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 2rem 3rem 2rem 2rem;
 
-        .adidas-title {
+        .nike-title {
             font-size: 2rem;
         }
 
-        .adidas-text {
+        .nike-text {
             font-size: 0.8rem;
         }
     }
@@ -113,24 +115,24 @@
 
 @media screen and (min-width: 1400px) {
 
-    .adidas-sneaker img {
+    .nike-sneaker img {
         width: 25rem;
         margin-left: -67px;
     }
 
-    .adidas-circle {
+    .nike-circle {
         width: 18rem;
         height: 18rem;
     }
 
-    .adidas-container-info {
+    .nike-container-info {
         padding: 2rem 9rem 2rem 2rem;
 
-        .adidas-title {
+        .nike-title {
             font-size: 2.2rem;
         }
 
-        .adidas-text {
+        .nike-text {
             font-size: 1rem;
         }
     }
@@ -138,25 +140,26 @@
 
 @media screen and (min-width: 1600px) {
 
-    .adidas-sneaker img {
-        width: 32rem;
+    .nike-sneaker img {
+        width: 30rem;
         margin-left: -45px;
+        margin-top: 25px;
     }
 
-    .adidas-circle {
+    .nike-circle {
         width: 24rem;
         height: 24rem;
     }
 
-    .adidas-container-info {
+    .nike-container-info {
         padding: 2rem 15rem 2rem 2rem;
 
-        .adidas-title {
+        .nike-title {
             font-size: 2.7rem;
             margin-bottom: 10px;
         }
 
-        .adidas-text {
+        .nike-text {
             font-size: 1rem;
             margin-bottom: 10px;
         }

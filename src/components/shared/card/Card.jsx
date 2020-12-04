@@ -1,14 +1,13 @@
 import React from 'react'
-import { CardData } from '../card/Card-data';
 
-function CardAdidas() {
+function Card(props) {
     return (
         <>
             <div className="container-title-section">
                 <h2 className="title-section">Recent view</h2>
             </div>            
             <div className="card-container">
-                { CardData.map((item, index) => {
+                { props.data.map((item, index) => {
                     return(
                         <div key={ index } className="card">
                             <div className="card-header">
@@ -26,4 +25,4 @@ function CardAdidas() {
     )
 }
 
-export default CardAdidas
+export default Card

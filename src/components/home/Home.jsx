@@ -2,6 +2,8 @@ import { React } from 'react';
 import Slider from './slider/Slider';
 import Card from '../shared/card/Card';
 import Banner from '../shared/banner/Banner';
+import { CardDataHome } from '../../components/shared/card/Card-data';
+import { BannerDataHome } from '../../components/shared/banner/Banner-data';
 
 function Home() {
   return (
@@ -11,10 +13,10 @@ function Home() {
             <Slider/>
         </div>
         <div className="container-section-visits">
-            <Card/>
+            <Card data={CardDataHome}/>
         </div>
         <div className="container-section-visits">
-            <Banner/>
+            <Banner data={BannerDataHome}/>
         </div>
     </>
   );
