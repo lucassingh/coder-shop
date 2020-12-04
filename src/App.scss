@@ -19,12 +19,12 @@ body {
     align-items: center;
     margin-top: 8%;
 
-.title-section {
+    .title-section {
         color: $primary-color;
     }
 }
 
-//home section slider
+//
 
 .container-section {
     text-align: center;
@@ -51,9 +51,18 @@ body {
     justify-content: flex-start;
     align-items: center;
     margin-top: 2%;
-    padding: 0% 18% 0% 18%;    
+    padding: 0% 12% 0% 12%;    
         .title-section {
             color: $primary-color;
         }
+    }    
+}
+
+@media screen and (min-width: 1600px) {
+
+//home section slider
+
+.container-title-section {
+        padding: 0% 18% 0% 18%;
     }    
 }
