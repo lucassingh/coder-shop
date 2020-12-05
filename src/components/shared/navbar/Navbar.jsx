@@ -27,7 +27,7 @@ class Navbar extends Component {
                                 </li>
                             )
                         })}
-                    </ul>
+                    </ul>                    
                 </nav>
                 <CartWidget/>
             </>
