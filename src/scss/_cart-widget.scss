@@ -1,13 +1,10 @@
 .cart-widget-container {
     width: 100%;
-    padding: 4%;
-    position: absolute;
-    background: lightblue;
-    z-index: -1;
-    top: -100%;
-}
-
-.cart-widget-container.active {
-    left: 0;
-    transition: 350ms;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    .wraper {
+        width: 80%;
+        border: 1px solid blue;
+    }
 }
