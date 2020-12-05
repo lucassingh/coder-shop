@@ -1,10 +1,100 @@
 .cart-widget-container {
     width: 100%;
-    border: 1px solid red;
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid #eeeeee;
+        box-shadow: 1px 3px 11px -8px #525252;
     .wraper {
         width: 80%;
-        border: 1px solid blue;
+    }
+
+    .cart-widget-product {
+        width: 100%;
+        padding: 13px;
+        border: 1px solid #0057ff;
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        margin: 7px 0px 7px 0px;
+
+        .title-widget {
+            font-size: 13px;
+        }
+
+        .text-detail-widget {
+            font-size: 11px;
+        }
+
+        .price-widget {
+            font-size: 11px;
+        }
+
+        .img-widget {
+            width: 35%;
+            margin-bottom: 10px;
+        }
+
+        .button-primary {
+            width: 100px;
+            outline: none;
+            background: #0057ff;
+            color:  #fff;
+            border-radius: 50px;
+            border: none;
+            padding: 0;
+            height: 30px;
+        }
+
+        .button-primary:hover {
+            width: 100px;
+            outline: none;
+            background: #dc5cbd;
+            color:  #fff;
+            border-radius: 50px;
+            padding: 0;
+            height: 30px;
+        }
+
+        .button-secondary {
+            width: 100px;
+            outline: none;
+            background: #fff;
+            color:  #0057ff;
+            border-radius: 50px;
+            padding: 0;
+            border: 2px solid #0057ff;
+            height: 30px;
+                margin-bottom: 10px;
+        }
+
+        .button-secondary:hover {
+            background: #0057ff;
+            color: #fff;
+            transition: all 0.2s ease-out;
+            cursor: pointer;
+        }       
+    }
+    .centered {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cart-widget-container {
+        .wraper {
+            width: 60%;
+            display: flex;
+        }
+        .cart-widget-product {
+            margin: 10px 0px 10px 0px;
+        }
+
+        .center-desktop {
+            margin-left: 10px;
+            margin-right: 10px;
+            display: flex;
+            justify-content: center;
+        }
     }
 }
