@@ -7,6 +7,7 @@ import Footer from './components/shared/footer/footer';
 import Adidas from './pages/adidas/Adidas';
 import Nike from './pages/nike/Nike';
 import Puma from './pages/puma/Puma';
+import Shop from './pages/shop/Shop';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
                         <Route path='/adidas' component={ Adidas }/>
                         <Route path='/nike' component={ Nike }/>
                         <Route path='/puma' component={ Puma }/>
+                        <Route path='/shop' component={ Shop }/>
                     </Switch>
                 <Newsletter/>
                 <Footer/>
