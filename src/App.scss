@@ -58,6 +58,18 @@ body {
     }    
 }
 
+// cart section
+
+.container-title-section-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0%;
+    margin-bottom: 4%;
+    color: $primary-color;
+}
+
+
 @media screen and (min-width: 1600px) {
 
 //home section slider
@@ -65,4 +77,10 @@ body {
 .container-title-section {
         padding: 0% 18% 0% 18%;
     }    
+}
+
+@media screen and (min-width: 768px) {
+.container-title-section-cart {
+        margin-bottom: 0%;
+    }
 }
