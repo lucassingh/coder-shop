@@ -1,4 +1,5 @@
 import React from 'react';
+import ButtonRedirect from '../../../shared/button-redirect/ButtonRedirect'
 
 function Brandbar () {
 
@@ -7,7 +8,7 @@ function Brandbar () {
             <nav className="brand-bar">
                 <ul className="items">
                     <img src="assets/icons/logo.svg" alt="logo-brand"/>
-                    <i className="fas fa-shopping-cart"></i>
+                    <ButtonRedirect/>
                     <button className="button-login">Login</button>
                 </ul>
             </nav>
