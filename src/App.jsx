@@ -9,6 +9,7 @@ import Nike from './pages/nike/Nike';
 import Puma from './pages/puma/Puma';
 import Shop from './pages/shop/Shop';
 import Cart from './pages/cart/Cart';
+import ProductDetail from './components/products/product-detail/ProductDetail';
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
                         <Route path='/nike' component={ Nike }/>
                         <Route path='/puma' component={ Puma }/>
                         <Route path='/shop' component={ Shop }/>
-                        <Route path='/cart' component={ Cart }/>                        
+                        <Route path='/cart' component={ Cart }/>
+                        <Route path='/product-detail' component={ ProductDetail }/>
                     </Switch>
                 <Newsletter/>
                 <Footer/>

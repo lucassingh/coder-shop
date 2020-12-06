@@ -47,15 +47,17 @@ body {
 }
 
 .container-title-section {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 2%;
-    padding: 0% 12% 0% 12%;    
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 2%;
+        padding: 0% 12% 0% 12%;
         .title-section {
             color: $primary-color;
         }
-    }    
+    }
+
+    
 }
 
 // cart section
@@ -64,13 +66,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0%;
+    margin-top: 4%;
     margin-bottom: 4%;
     color: $primary-color;
 }
 
 
 @media screen and (min-width: 1600px) {
+
 
 //home section slider
 
@@ -81,6 +84,7 @@ body {
 
 @media screen and (min-width: 768px) {
 .container-title-section-cart {
-        margin-bottom: 0%;
+        margin-top: 1%;
+        margin-bottom: 1%;
     }
 }

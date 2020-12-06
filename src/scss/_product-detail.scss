@@ -1,0 +1,15 @@
+.product-detail-container {
+    width: 100%;
+    height: 600px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+}
+
+.product-detail-wraper {
+    width: 90%;
+    border-radius: 10px;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+}
