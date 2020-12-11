@@ -1,4 +1,5 @@
 import React from 'react'
+import Count from './count-item/Count';
 
 function CartItem(props) {
    
@@ -22,10 +23,7 @@ function CartItem(props) {
                                 </div>                               
                             </div>
                             <div className="cont-actions">
-                                <div className="cont-button">
-                                    <button className="cart-button">-</button>
-                                    <button className="cart-button">+</button>
-                                </div>
+                                <Count/>
                                 <div className="cont-price">
                                     <p className="cart-item-price">{item.price}</p>
                                     <p className="cart-link"> Remove item</p>
