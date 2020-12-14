@@ -4,14 +4,14 @@ import CartWidget from '../../../cart-widget/CartWidget';
 
 function Brandbar () {
 
-    const [ showWidgetCart, setshowWidgetCart ] = useState(false);
+    const [ showWidgetCart ] = useState(false);
 
-    const openWidgetCart = () => {
+    /* const openWidgetCart = () => {
         setshowWidgetCart(true);
         setTimeout(() => {
             setshowWidgetCart(false);
         }, 4000);
-    }
+    }*/
 
     return(   
         <>
