@@ -1,11 +1,11 @@
 import React from 'react'
 
-function CartWidget() {
+function CartWidget({ show }) {
    
     return (
         <>
             <div >
-                <div className="cart-widget-container" >
+                <div className={ ` cart-widget-container ${ show ? 'open' : 'close' }`} >
                     <div className="wraper">
                         <div className="cart-widget-product">
                             <h4 className="title-widget">Added to your cart</h4>
