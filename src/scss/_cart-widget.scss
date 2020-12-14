@@ -7,9 +7,11 @@
     position: absolute;
     background: #fff;
     top: -100%;
+    transition: all 1.5s ease;
+    
     .wraper {
         width: 80%;
-    }
+    }    
 
     .cart-widget-product {
         width: 100%;
@@ -81,6 +83,11 @@
         justify-content: center;
         align-items: center;
     }
+}
+
+.cart-widget-container.open {
+    top: 0%;
+    transition: all 1.5s ease;
 }
 
 @media screen and (min-width: 768px) {

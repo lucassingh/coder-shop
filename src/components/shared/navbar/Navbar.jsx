@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { NavbarData } from './NavbarData';
 import Brandbar  from './navBrand/NavBrand';
-import CartWidget from '../../cart-widget/CartWidget';
 
 class Navbar extends Component {
 
@@ -28,8 +27,7 @@ class Navbar extends Component {
                             )
                         })}
                     </ul>                    
-                </nav>
-                <CartWidget/>
+                </nav>                
             </>
         )        
     }
