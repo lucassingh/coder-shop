@@ -36,7 +36,9 @@
 }
 
 .product-card-img img {
-    width: 60%;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
 }
 
 .product-card-button {
