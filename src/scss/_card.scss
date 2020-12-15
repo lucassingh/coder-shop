@@ -5,7 +5,7 @@
     grid-gap: 1rem;
     max-width: 700px;
     margin: auto;
-    padding: 7%;
+    padding: 3%;
 }
 
 .card {    
@@ -25,9 +25,9 @@
 
 .card:hover {
     cursor: pointer;
-    -webkit-box-shadow: 1px 3px 11px -8px $box-shadows;
-    -moz-box-shadow: 1px 3px 11px -8px $box-shadows;
-    box-shadow: 1px 3px 11px -8px $box-shadows;
+    -webkit-box-shadow: $box-shadows;
+    -moz-box-shadow: $box-shadows;
+    box-shadow:  $box-shadows;
 
     .card-title {
         color: $primary-color;
@@ -42,14 +42,14 @@
 
 @media screen and (min-width: 768px) {
     .card-container {
-        margin-top: 40px;
-        padding: 0;
+        padding: 7%;
+        max-width: 100%;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     .card img {
         width: 80%;
-        padding: 8%;
+        padding: 2%;
     }
 }
 
