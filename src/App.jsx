@@ -3,13 +3,13 @@ import Navbar from './components/shared/navbar/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './components/home/Home';
 import Newsletter from './components/shared/newsletter/Newsletter';
-import Footer from './components/shared/footer/footer';
 import Adidas from './pages/adidas/Adidas';
 import Nike from './pages/nike/Nike';
 import Puma from './pages/puma/Puma';
 import Shop from './pages/shop/Shop';
 import Cart from './pages/cart/Cart';
 import ProductDetail from './components/products/product-detail/ProductDetail';
+import { FooterContainer } from './containers/FooterContainer';
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
                         <Route path='/product-detail' component={ ProductDetail }/>
                     </Switch>
                 <Newsletter/>
-                <Footer/>
+                <FooterContainer/>
         </Router>
     </>
   );
