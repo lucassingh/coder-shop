@@ -1,0 +1,100 @@
+{ 
+    "ProductsData": [
+        {
+            "id": 1,
+            "title": "Adidas PulseBoost",
+            "urlImg": "assets/cards/adidas-1.png",
+            "price": "U$D 120.95"
+        },
+        {   
+            "id": 2,
+            "title": "Nike Joyrid Run",
+            "urlImg": "assets/cards/nike-1.png",
+            "price": "U$D 105.95"
+        },
+        {
+            "id": 3,
+            "title": "Adidas Ultraboost",
+            "urlImg": "assets/cards/adidas-3.png",
+            "price": "U$D 95.00"
+        },
+        {
+            "id": 4,
+            "title": "Puma Lqdcell FM",
+            "urlImg": "assets/cards/puma-1.png",
+            "price": "U$D 87.95"
+        },
+        {
+            "id": 5,
+            "title": "Nike Free RN 5.0",
+            "urlImg": "assets/cards/nike-2.png",
+            "price": "U$D 130.95"
+        },
+        {
+            "id": 6,
+            "title": "Puma NGRY Commet",
+            "urlImg": "assets/cards/puma-3.png",
+            "price": "U$D 123.00"
+        },
+        {
+            "id": 7,
+            "title": "Nike Air zoom Winflo 7",
+            "urlImg": "assets/cards/nike-3.png",
+            "price": "U$D 90.00"
+        },
+        {
+            "id": 8,
+            "title": "Adidas Solar Glide",
+            "urlImg": "assets/cards/adidas-4.png",
+            "price": "U$D 127.00"
+        },
+         {
+            "id": 9,
+            "title": "Adidas PulseBoost",
+            "urlImg": "assets/cards/adidas-1.png",
+            "price": "U$D 120.95"
+        },
+        {   
+            "id": 10,
+            "title": "Nike Joyrid Run",
+            "urlImg": "assets/cards/nike-1.png",
+            "price": "U$D 105.95"
+        },
+        {
+            "id": 11,
+            "title": "Adidas Ultraboost",
+            "urlImg": "assets/cards/adidas-3.png",
+            "price": "U$D 95.00"
+        },
+        {
+            "id": 12,
+            "title": "Puma Lqdcell FM",
+            "urlImg": "assets/cards/puma-1.png",
+            "price": "U$D 87.95"
+        },
+        {
+            "id": 13,
+            "title": "Nike Free RN 5.0",
+            "urlImg": "assets/cards/nike-2.png",
+            "price": "U$D 130.95"
+        },
+        {
+            "id": 14,
+            "title": "Puma NGRY Commet",
+            "urlImg": "assets/cards/puma-3.png",
+            "price": "U$D 123.00"
+        },
+        {
+            "id": 15,
+            "title": "Nike Air zoom Winflo 7",
+            "urlImg": "assets/cards/nike-3.png",
+            "price": "U$D 90.00"
+        },
+        {
+            "id": 16,
+            "title": "Adidas Solar Glide",
+            "urlImg": "assets/cards/adidas-4.png",
+            "price": "U$D 127.00"
+        }
+    ]
+}
