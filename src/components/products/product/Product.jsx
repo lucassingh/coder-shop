@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Loader from '../../shared/loader/Loader';
 
 const Product = (props) => {
 
@@ -7,7 +8,7 @@ const [ products, setProducts ] = useState([]);
 const getProducts = new Promise((resolve, reject) => {
     setTimeout(() => {
         resolve(props.data)
-    }, 5000)
+    }, 5000);
 })
 
 useEffect(() => {
@@ -28,7 +29,7 @@ useEffect(() => {
             {
                 products.length ?
 
-                <div className="product-container">
+                <div className="product-container animated">
                     { products.map((item, index) => {
                         return(
                         <div key={ index } className="product-card">
@@ -44,9 +45,8 @@ useEffect(() => {
                         </div>
                         )
                     })}
-                </div> :
-
-                <p>Cargando items...</p>
+                </div> :                
+                <Loader/>
             }
         </>
     )
