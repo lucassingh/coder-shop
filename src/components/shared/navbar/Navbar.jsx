@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NavbarData } from './NavbarData';
 import Brandbar  from './navBrand/NavBrand';
+import { Link } from 'react-router-dom';
 
 class Navbar extends Component {
 
@@ -22,7 +23,7 @@ class Navbar extends Component {
                         { NavbarData.map((item, index) => {
                             return(
                                 <li key={index}>
-                                    <a href={item.url} className={item.cname}>{item.title}</a>
+                                    <Link to={item.url} className={item.cname}>{item.title}</Link>
                                 </li>
                             )
                         })}
