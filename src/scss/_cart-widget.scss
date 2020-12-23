@@ -7,6 +7,7 @@
     position: absolute;
     background: #fff;
     top: -100%;
+    left: 0;
     transition: all 1.5s ease;
     
     .wraper {
@@ -86,7 +87,7 @@
 }
 
 .cart-widget-container.open {
-    top: 0%;
+    top: 18%;
     transition: all 1.5s ease;
 }
 
