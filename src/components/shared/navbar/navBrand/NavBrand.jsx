@@ -7,7 +7,7 @@ function Brandbar () {
         <>
             <nav className="brand-bar">
                 <ul className="items">
-                    <img src="assets/icons/logo.svg" alt="logo-brand"/>
+                    <img src="../../../../assets/icons/logo.svg" alt="logo-brand"/>
                     <ButtonRedirect/>
                     <button className="button-login">Login</button>
                 </ul>

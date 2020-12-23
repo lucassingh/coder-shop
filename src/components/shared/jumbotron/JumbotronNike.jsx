@@ -6,7 +6,7 @@ function JumbotronNike() {
             <div className="nike-container">
                 <div className="nike-sneaker">
                     <div className="nike-circle">
-                        <img src="assets/nike.png" alt="nike-shoes"></img>
+                        <img src="../../../../assets/nike.png" alt="nike-shoes"></img>
                     </div>
                 </div>
                 <div className="nike-container-info">

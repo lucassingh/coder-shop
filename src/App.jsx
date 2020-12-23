@@ -19,12 +19,12 @@ function App() {
                 <Navbar/>
                     <Switch>
                         <Route path='/' exact component={ Home }/>
-                        <Route path='/adidas' component={ Adidas }/>
-                        <Route path='/nike' component={ Nike }/>
-                        <Route path='/puma' component={ Puma }/>
+                        <Route path='/category-adidas/:id' component={ Adidas }/>
+                        <Route path='/category-nike/:id' component={ Nike }/>
+                        <Route path='/category-puma/:id' component={ Puma }/>
                         <Route path='/shop' component={ Shop }/>
                         <Route path='/cart' component={ Cart }/>
-                        <Route path='/product-detail' component={ ProductDetail }/>
+                        <Route path='/product-detail/:id' component={ ProductDetail }/>
                         <Route path='*' component={ ErrorPage }/>
                     </Switch>
                 <Newsletter/>
