@@ -6,7 +6,7 @@ function JumbotronAdidas() {
             <div className="adidas-container">
                 <div className="adidas-sneaker">
                     <div className="adidas-circle">
-                        <img src="assets/adidas.png" alt="adidas-shoes"></img>
+                        <img src="../../../../assets/adidas.png" alt="adidas-shoes"></img>
                     </div>
                 </div>
                 <div className="adidas-container-info">

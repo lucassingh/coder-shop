@@ -6,7 +6,7 @@ function JumbotronPuma() {
             <div className="puma-container">
                 <div className="puma-sneaker">
                     <div className="puma-circle">
-                        <img src="assets/puma.png" alt="adidas-shoes"></img>
+                        <img src="../../../../assets/puma.png" alt="adidas-shoes"></img>
                     </div>
                 </div>
                 <div className="puma-container-info">

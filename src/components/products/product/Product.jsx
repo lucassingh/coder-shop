@@ -53,7 +53,7 @@ useEffect(() => {
                                 <p>{ item.price }</p>
                                 <div className="container-product-actions">
                                     <button onClick={openWidgetCart} className="product-card-button">Add to cart</button>
-                                    <Link to="/product-detail" className="product-view-more-button">+</Link>
+                                    <Link to="/product-detail/1" className="product-view-more-button">+</Link>
                                 </div>
                             </div>
                         </div>

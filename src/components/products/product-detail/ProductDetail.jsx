@@ -1,16 +1,20 @@
 import React from 'react'
+import { useParams } from 'react-router-dom';
+
 
 function ProductDetail() {
-   
+   const { id } = useParams();
     return (
         <>
             <div className="container-title-section-cart">
                 <h2 className="title-section">Product detail</h2>
             </div>
+            
             <div className="product-detail-container">
                 <div className="product-detail-wraper">
+                    el producto tiene el id {id}
                     <div className="product-detail-container-img">
-                        <img src="assets/adidas.png" alt="adidas-running"/>
+                        <img src="../../../../assets/adidas.png" alt="adidas-running"/>
                     </div>
                     <div className="product-detail-info">
                         <h2>Adidas Booster 3.0</h2>
