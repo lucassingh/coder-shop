@@ -33,18 +33,14 @@ useEffect(() => {
     return (
         <>
             
-                <CartWidget show={ showWidgetCart }/>
+            <CartWidget show={ showWidgetCart }/>
             
-            
-            <div className="container-title-section-cart">
-                
-                <h2 className="title-section">Shop</h2>
-                
+            <div className="container-title-section-cart">                
+                <h2 className="title-section">Shop</h2>                
             </div>            
 
             {
                 products.length ?
-
                 <div className="product-container animated">
                     { products.map((item, index) => {
                         return(
