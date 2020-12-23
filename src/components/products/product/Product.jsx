@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import CartWidget from '../../cart-widget/CartWidget';
 import Loader from '../../shared/loader/Loader';
+import { Link } from 'react-router-dom';
 
 const Product = (props) => {
 
@@ -18,7 +19,7 @@ const [ products, setProducts ] = useState([]);
 const getProducts = new Promise((resolve, reject) => {
     setTimeout(() => {
         resolve(props.data)
-    }, 5000);
+    }, 1000);
 })
 
 useEffect(() => {
@@ -50,13 +51,15 @@ useEffect(() => {
                             <div className="product-card-body">
                                 <h3 className="product-card-title">{ item.title }</h3>
                                 <p>{ item.price }</p>
-
-                                <button onClick={openWidgetCart} className="product-card-button">Add to cart</button>
+                                <div className="container-product-actions">
+                                    <button onClick={openWidgetCart} className="product-card-button">Add to cart</button>
+                                    <Link to="/product-detail" className="product-view-more-button">+</Link>
+                                </div>
                             </div>
                         </div>
                         )
                     })}
-                </div> :                
+                </div> :
                 <Loader/>
             }
         </>
