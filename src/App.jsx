@@ -9,8 +9,8 @@ import Puma from './pages/puma/Puma';
 import Shop from './pages/shop/Shop';
 import Cart from './pages/cart/Cart';
 import ErrorPage from './pages/404-error/ErrorPage';
-import ProductDetail from './components/products/product-detail/ProductDetail';
 import { FooterContainer } from './containers/FooterContainer';
+import ProductDetailPage from './pages/product-detail/product-detail';
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
                         <Route path='/category-puma/:id' component={ Puma }/>
                         <Route path='/shop' component={ Shop }/>
                         <Route path='/cart' component={ Cart }/>
-                        <Route path='/product-detail/:id' component={ ProductDetail }/>
+                        <Route path='/product-detail/:id' component={ ProductDetailPage }/>
                         <Route path='*' component={ ErrorPage }/>
                     </Switch>
                 <Newsletter/>
