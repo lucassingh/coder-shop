@@ -44,6 +44,7 @@ useEffect(() => {
                 <div className="product-container animated">
                     { products.map((item, index) => {
                         return(
+
                         <div key={ index } className="product-card">
                             <div className="product-card-img">
                                 <img src={item.urlImg} alt="shoe"/>
@@ -53,7 +54,7 @@ useEffect(() => {
                                 <p>{ item.price }</p>
                                 <div className="container-product-actions">
                                     <button onClick={openWidgetCart} className="product-card-button">Add to cart</button>
-                                    <Link to="/product-detail/1" className="product-view-more-button">+</Link>
+                                    <Link to={`/product-detail/${item.id}`} className="product-view-more-button">+</Link>
                                 </div>
                             </div>
                         </div>
