@@ -7,7 +7,7 @@ const ProductDetail = () => {
     let history = useHistory();
 
     const handleClickAdd = () => {
-        alert('Producto agregado al cart')
+        alert('Producto agregado al carrito')
     }
 
     const redirect = () => {

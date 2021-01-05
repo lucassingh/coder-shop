@@ -1,5 +1,5 @@
 import React from 'react'
-import Count from './count-item/Count';
+// import Count from './count-item/Count';
 
 function CartItem(props) {
    
