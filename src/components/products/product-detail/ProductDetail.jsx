@@ -1,6 +1,18 @@
 import React from 'react'
+import Count from './../../cartItem/count-item/Count';
+import { useHistory } from 'react-router-dom';
 
 const ProductDetail = () => {
+
+    let history = useHistory();
+
+    const handleClickAdd = () => {
+        alert('Producto agregado al carrito')
+    }
+
+    const redirect = () => {
+        history.push('/cart')
+    }
     
     return (
         <>
@@ -31,8 +43,14 @@ const ProductDetail = () => {
                             <button>43</button>
                         </div>
                     </div>
+                    <div className="container-count">
+                        <Count/>
+                    </div>
                     <div className="product-detail-button">
-                        <button>Add to cart</button>
+                        <div className="link" onClick={handleClickAdd}>Add to cart</div>
+                    </div>
+                    <div className="product-detail-button">
+                        <button className="link" onClick={redirect}>Continue shopping</button>
                     </div>
                 </div>
             </div>
