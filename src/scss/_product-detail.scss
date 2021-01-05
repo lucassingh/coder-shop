@@ -85,22 +85,28 @@ button.active {
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-.product-detail-button button {
-    width: 200px;
-    outline: none;
-    background: #0057ff;
-    color:  #fff;
-    border-radius: 50px;
-    border: none;
-    padding: 0;
-    height: 35px;
-}
+    .link {
+        width: 200px;
+        outline: none;
+        background: #0057ff;
+        color:  #fff;
+        border-radius: 50px;
+        border: none;
+        padding: 0;
+        height: 35px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        font-weight: bold;
+    }
 
-.product-detail-button button:hover {
-    background: #dc5cbd;
-    cursor: pointer;
+    .link:hover {
+        background: #dc5cbd;
+        cursor: pointer;
+    }
 }
 
 @media screen and (min-width: 768px) {

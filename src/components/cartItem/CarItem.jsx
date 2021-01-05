@@ -8,7 +8,7 @@ function CartItem(props) {
             <div className="container-title-section-cart">
                 <h2 className="title-section">Your Cart</h2>
             </div>
-            <div className="cart-item-container">
+            {/* <div className="cart-item-container">
                 <div className="cart-item-wrapper">                   
                     { props.data.map((item, index) => {
                         return(
@@ -36,7 +36,7 @@ function CartItem(props) {
                 <div className="cart-container-purchase">
                     <button className="cart-purchase-button">Purchase</button>
                 </div>
-            </div>
+            </div>*/} 
         </>
     );
 }
