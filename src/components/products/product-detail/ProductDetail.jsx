@@ -1,21 +1,33 @@
-import React from 'react'
-import Count from './../../cartItem/count-item/Count';
-// import { useContext } from 'react';
+import React, { useState } from 'react'
+import { useContext } from 'react';
 import { useHistory } from 'react-router-dom';
-// import { Store } from './../../../context/index';
+import { Store } from './../../../context/index';
 
 const ProductDetail = () => {
 
     const history = useHistory();
 
-    // const [data, useData] = useContext(Store);
+    const [data, setData] = useContext(Store);
 
-    const handleClickAdd = () => {
-        // useData({...data,})
-        alert('Producto agregado al carrito')
+    const [qty, setQty] = useState(1);
+
+    const handleClickResta = () => {	
+        if(qty > 1) {	
+            setQty(qty - 1);	
+        }	
     }
 
-    // console.log(data)
+    const onAdd = () => {
+        setData({
+            ...data, 
+            cantidad: data.cantidad + qty,
+            //items: [...data.items, item],
+        });
+        history.push('/cart');
+        alert(`Agregaste ${qty} productos al carrito`);
+    }
+
+    console.log(data)
 
     const redirect = () => {
         history.push('/cart')
@@ -51,10 +63,19 @@ const ProductDetail = () => {
                         </div>
                     </div>
                     <div className="container-count">
-                        <Count/>
+                        <div className="cont-button">	
+                            <button className="cart-button" 	
+                                    disabled={qty === 1 ? 'disabled' : null }
+                                    onClick={handleClickResta}	
+                                >
+                                -	
+                            </button>	
+                            <input type="text" value={qty} readOnly/>	
+                            <button className="cart-button" onClick={() => setQty(qty + 1)}>+</button>	
+                        </div>
                     </div>
                     <div className="product-detail-button">
-                        <div className="link" onClick={handleClickAdd}>Add to cart</div>
+                        <div className="link" onClick={onAdd}>Add to cart</div>
                     </div>
                     <div className="product-detail-button">
                         <button className="link" onClick={redirect}>Continue shopping</button>

@@ -11,7 +11,9 @@ function Brandbar () {
         history.push('/cart')
     }
 
-    const [data, useData] = useContext(Store);    
+    const [data] = useContext(Store);
+
+    console.log(data)
 
     return(   
         <>
