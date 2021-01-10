@@ -1,34 +1,42 @@
 import React, { useState } from 'react'
-import PropTypes from 'prop-types';
 import './Count.css'
 
 const Count = () => {
 
     const [ counter, setCounter ] = useState( 0 );
 
-    //handleAdd
-    const handleAdd = () => {
-        setCounter( counter + 1 );
+    const [qty, setQty] = useState(1);
+
+    const handleClickResta = () => {	
+        if(qty > 1) {	
+            setQty(qty - 1);	
+        }	
     }
 
-    //handleRemove
-    const handleRemove = () => {
-        setCounter( counter - 1 );
+    const onAdd = () => {
+        setData({
+            ...data, 
+            cantidad: data.cantidad + qty,
+            items: [...data.items, item],
+        });
+        history.push('/cart');
+        // alert(`Agregaste ${qty} productos al carrito`);	
     }
    
     return (
         <>
-            <div className="cont-button">
-                <button onClick={ handleRemove } className="cart-button">-</button>
-                <button onClick={ handleAdd } className="cart-button">+</button>
-                <span className="cart-text">Added item: </span><h3>{ counter}</h3>
-            </div>            
+            <div className="qty">	
+                    <button 	
+                        disabled={qty === 1 ? 'disabled' : null } 	
+                        onClick={handleClickResta}	
+                    >	
+                        -	
+                    </button>	
+                    <input type="text" value={qty} readOnly/>	
+                    <button onClick={() => setQty(qty + 1)}>+</button>	
+            </div>
         </>
     );
-}
-
-Count.propTypes = {
-    value: PropTypes.number
 }
 
 export default Count;

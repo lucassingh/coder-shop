@@ -1,14 +1,21 @@
 import React from 'react'
 import Count from './../../cartItem/count-item/Count';
+// import { useContext } from 'react';
 import { useHistory } from 'react-router-dom';
+// import { Store } from './../../../context/index';
 
 const ProductDetail = () => {
 
-    let history = useHistory();
+    const history = useHistory();
+
+    // const [data, useData] = useContext(Store);
 
     const handleClickAdd = () => {
+        // useData({...data,})
         alert('Producto agregado al carrito')
     }
+
+    // console.log(data)
 
     const redirect = () => {
         history.push('/cart')
