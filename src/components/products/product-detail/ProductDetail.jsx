@@ -23,7 +23,7 @@ const ProductDetail = () => {
             cantidad: data.cantidad + qty,
             //items: [...data.items, item],
         });
-        history.push('/cart');
+        // history.push('/cart');
         alert(`Agregaste ${qty} productos al carrito`);
     }
 

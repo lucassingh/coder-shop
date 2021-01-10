@@ -1,14 +1,14 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { Store } from './../../../../context/index';
+import CartWidget from './../../../cart-widget/CartWidget';
 
 function Brandbar () {
 
-    let history = useHistory();
+    const [ showWidgetCart, setshowWidgetCart ] = useState(false);
 
-    const redirect = () => {
-        history.push('/cart')
+    const openWidgetCart = () => {
+        setshowWidgetCart(true);
     }
 
     const [data] = useContext(Store);
@@ -20,13 +20,14 @@ function Brandbar () {
             <nav className="brand-bar">
                 <ul className="items">
                     <img src="../../../../assets/icons/logo.svg" alt="logo-brand"/>
-                    <div className="wrapper-cart-icon" onClick={redirect}>
-                        <i className="fas fa-shopping-cart"></i>
+                    <div className="wrapper-cart-icon">
+                        <i onClick={openWidgetCart} className="fas fa-shopping-cart"></i>
                         <span className="wrapper-cart-number">{data.cantidad}</span>
                     </div>
                     <button className="button-login">Login</button>
                 </ul>
-            </nav>           
+            </nav>
+            <CartWidget show={ showWidgetCart }/>
         </>
     )    
 }
