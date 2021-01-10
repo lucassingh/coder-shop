@@ -1,4 +1,6 @@
 import './App.scss';
+import { useState } from 'react';
+import { Store } from './context/index';
 import Navbar from './components/shared/navbar/Navbar';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './components/home/Home';
@@ -13,24 +15,32 @@ import { FooterContainer } from './containers/FooterContainer';
 import ProductDetailPage from './pages/product-detail/product-detail';
 
 function App() {
-  return (
-    <>
-        <BrowserRouter>
-                <Navbar/>
-                    <Switch>
-                        <Route path='/' exact component={ Home }/>
-                        <Route path='/category-adidas/:id' component={ Adidas }/>
-                        <Route path='/category-nike/:id' component={ Nike }/>
-                        <Route path='/category-puma/:id' component={ Puma }/>
-                        <Route path='/shop' component={ Shop }/>
-                        <Route path='/cart' component={ Cart }/>
-                        <Route path='/product-detail/:id' component={ ProductDetailPage }/>
-                        <Route path='*' component={ ErrorPage }/>
-                    </Switch>
-                <Newsletter/>
-                <FooterContainer/>
-        </BrowserRouter>
-    </>
+
+    const [data, setData] = useState({
+        items: [],
+        cantidad: 0
+    })
+
+    return (
+        <>
+            <Store.Provider value={[data, setData]}>
+                <BrowserRouter>
+                        <Navbar/>
+                            <Switch>
+                                <Route path='/' exact component={ Home }/>
+                                <Route path='/category-adidas/:id' component={ Adidas }/>
+                                <Route path='/category-nike/:id' component={ Nike }/>
+                                <Route path='/category-puma/:id' component={ Puma }/>
+                                <Route path='/shop' component={ Shop }/>
+                                <Route path='/cart' component={ Cart }/>
+                                <Route path='/product-detail/:id' component={ ProductDetailPage }/>
+                                <Route path='*' component={ ErrorPage }/>
+                            </Switch>
+                        <Newsletter/>
+                        <FooterContainer/>
+                </BrowserRouter>
+            </Store.Provider>
+        </>
   );
 }
 

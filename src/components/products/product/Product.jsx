@@ -16,7 +16,7 @@ const openWidgetCart = () => {
 
 const [ products, setProducts ] = useState([]);
 
-const getProducts = new Promise((resolve, reject) => {
+const getProducts = new Promise((resolve) => {
     setTimeout(() => {
         resolve(props.data)
     }, 1000);
