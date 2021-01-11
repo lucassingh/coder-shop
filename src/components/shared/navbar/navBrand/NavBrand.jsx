@@ -8,7 +8,7 @@ function Brandbar () {
     const [ showWidgetCart, setshowWidgetCart ] = useState(false);
 
     const openWidgetCart = () => {
-        setshowWidgetCart(true);
+        setshowWidgetCart(!showWidgetCart);
     }
 
     const [data] = useContext(Store);
@@ -27,7 +27,7 @@ function Brandbar () {
                     <button className="button-login">Login</button>
                 </ul>
             </nav>
-            <CartWidget show={ showWidgetCart }/>
+            <CartWidget show={ showWidgetCart } action={openWidgetCart} />
         </>
     )    
 }

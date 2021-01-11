@@ -42,8 +42,7 @@ useEffect(() => {
                                 <h3 className="product-card-title">{ item.title }</h3>
                                 <p>{ item.price }</p>
                                 <div className="container-product-actions">
-                                    <button className="product-card-button">Add to cart</button>
-                                    <Link to={`/product-detail/${item.id}`} className="product-view-more-button">+</Link>
+                                    <Link to={`/product-detail/${item.id}`} className="product-card-button">Detail</Link>
                                 </div>
                             </div>
                         </div>
