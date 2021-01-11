@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import { useHistory } from 'react-router-dom';
 import { Store } from './../../../context/index';
 
-const ProductDetail = () => {
+const ProductDetail = ({item}) => {
 
     const history = useHistory();
 
@@ -21,10 +21,10 @@ const ProductDetail = () => {
         setData({
             ...data, 
             cantidad: data.cantidad + qty,
-            //items: [...data.items, item],
+            items: [...data.items, item],
         });
-        // history.push('/cart');
         alert(`Agregaste ${qty} productos al carrito`);
+        history.push('/cart');        
     }
 
     console.log(data)
