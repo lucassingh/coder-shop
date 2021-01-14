@@ -21,7 +21,7 @@ const CardDetail = ({item}) => {
             items: [...data.items, item],
         });
         history.push('/cart');
-        // alert(`Agregaste ${qty} productos al carrito`);	
+        alert(`Agregaste ${qty} productos al carrito`);	
     }
     
     console.log(data);
