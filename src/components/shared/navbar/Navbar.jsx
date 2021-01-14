@@ -1,36 +1,43 @@
-import React, { Component } from 'react';
-import { NavbarData } from './NavbarData';
-import Brandbar  from './navBrand/NavBrand';
+import './NavBar.css';
+import NavItem from '../navItem/NavItem';
+import NavigationCart from '../navigationCart/NavigationCart';
+import {Link} from 'react-router-dom';
 
-class Navbar extends Component {
+function NavBar({titulo, action}) {
+    const menuItems = [
+        {
+            texto: 'Home',
+            ruta: '/',
+        },
+        {
+            texto: 'Nike',
+            ruta: '/nike',
+        },
+        {
+            texto: 'Adidas',
+            ruta: '/adidas',
+        },
+        {
+            texto: 'Puma',
+            ruta: '/puma',
+        }
+    ]
 
-    state = { clicked: false }
-    
-    handleClick = () => {
-        this.setState({ clicked: !this.state.clicked })
-    }
-
-    render() {                
-        return(
-            <>
-                <Brandbar/>
-                <nav className="navbar-items">
-                    <div className="menu-icon" onClick={this.handleClick}>
-                        <i className={ this.state.clicked ? 'fas fa-times' : 'fas fa-bars' }></i>
-                    </div>
-                    <ul className={ this.state.clicked ? 'nav-menu-m active-m' : 'nav-menu-m'}>
-                        { NavbarData.map((item, index) => {
-                            return(
-                                <li key={index}>
-                                    <a href={item.url} className={item.cname}>{item.title}</a>
-                                </li>
-                            )
-                        })}
-                    </ul>                    
-                </nav>                
-            </>
-        )        
-    }
+    return (
+        <nav>
+            <div className="container">
+                <h1><Link to="/">{titulo}</Link></h1>
+                <div className="container-ul">
+                    <ul>
+                        {
+                        menuItems.map((seccion, index) => <NavItem key={index} text={seccion.texto} url={seccion.ruta} />)   
+                        }
+                    </ul>
+                </div>               
+                <NavigationCart action={action} />
+            </div>
+        </nav>
+    )
 }
 
-export default Navbar;
+export default NavBar;

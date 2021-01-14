@@ -3,6 +3,7 @@ import Image from './Image';
 import i1 from '../../../assets/1.jpg';
 import i2 from '../../../assets/2.jpg';
 import i3 from '../../../assets/3.jpg';
+import './Slider.css'
 
 function Slider() {
     let sliderArray = [
@@ -21,22 +22,24 @@ function Slider() {
     }
 
     return (
-        <div className="slider">
-            {
-                sliderArray.map((item, index) => {
-                    return(
-                        <div key={index} className="slide" style={{transform: `translateX(${x}%)`}}>
-                            {item}    
-                        </div>            
-                    )
-                })
-            }
-            <button id="goLeft" onClick={ goLeft }>
-                <i className="fas fa-chevron-left"></i>
-            </button>
-            <button id="goRight" onClick={ goRight }>
-                <i className="fas fa-chevron-right"></i>
-            </button>
+        <div className="cont-slider">
+            <div className="slider">
+                {
+                    sliderArray.map((item, index) => {
+                        return(
+                            <div key={index} className="slide" style={{transform: `translateX(${x}%)`}}>
+                                {item}    
+                            </div>            
+                        )
+                    })
+                }
+                <button id="goLeft" onClick={ goLeft }>
+                    <i className="fas fa-chevron-left"></i>
+                </button>
+                <button id="goRight" onClick={ goRight }>
+                    <i className="fas fa-chevron-right"></i>
+                </button>
+            </div>
         </div>
     )
 }
