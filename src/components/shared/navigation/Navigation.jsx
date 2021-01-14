@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import WidgetCart from '../widgetCart/WidgetCart';
-import NavBar from './../navBar/NavBar';
+import NavBar from '../navBar/NavBar';
 
 const Navigation = () => {
     const [showWidgetCart, setShowWidgetCart] = useState(false);
